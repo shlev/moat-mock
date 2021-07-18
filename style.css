@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  background-image: url('./resources/connected.png');
+  background-color: #005ce6;
+  width: 100%;
+  height: 100vh;
+}
+
+.home header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header-btn {
+  background-color: #fff;
+  padding: 15px;
+  width: 
+}
+
+.header-btn.right {
+  border-radius: 50%;
+}
+
+.main {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+}
+
+.main-top .left {
+  font-size: 2rem;
+}
+
+.main-top .right {
+  display: flex;
+}
+.product-type {
+  padding-left: 20px;
+  text-align: right;
+}
+
+.main-carousel {
+  height: 100px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.carousel p {
+    margin-left: 1rem;
+}
+
+.main-footer {
+  width: 70%;
+  border-top: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.home-page-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
