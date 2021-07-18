@@ -1,0 +1,180 @@
+@import './vars';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home {
+  background-image: var(--bg-pattern);
+  background-color: #005ce6;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.home header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header-btn {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.header-btn.right {
+  border-radius: 50%;
+}
+
+.main {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+}
+
+.main-top .left {
+  font-size: 2rem;
+}
+
+.main-top .right {
+  display: flex;
+}
+.product-type {
+  padding-left: 20px;
+  text-align: right;
+}
+
+.main-carousel {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  animation-name: carousel-text;
+  animation-duration: 15s;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100%;
+}
+
+@keyframes carousel-text {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.carousel p {
+  margin-left: 1rem;
+}
+
+.main-footer {
+  width: 70%;
+  border-top: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.home-page-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  img {
+    width: 35px;
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+@import './concept-section';
+
+#concept-section {
+  background-image: var(--bg-pattern);
+  background-color: #333;
+    color: #fff;
+
+  .concept-section-container {
+    padding: 70px 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1140px;
+
+    header {
+      font-size: 80px;
+      width: 1000px;
+      font-family: Nhaas, sans serif;
+      margin-bottom: 70px;
+
+      span {
+        font-size: 20px;
+        vertical-align: top;
+      }
+    }
+
+    .concept-content {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 380px);
+      grid-template-areas: 
+      ". desc ."
+      "btn img img";
+
+      .concept-description { grid-area: desc;}
+      .about-button { 
+        grid-area: btn;
+        background-color: #fff;
+        height: 50px;
+        display: flex;
+        color: #000;
+        position: relative;
+
+        .about-button-content {
+          margin: auto 5px;
+
+          .about-header { opacity:0.5}
+        }
+        .arrow { background: #0047fc; height: 50px; width: 50px;
+        position: absolute; right: 0;}
+        img { width: 30px; display: inline-block; margin: 10px;}
+      }
+      .concept-image{ grid-area: img;};
+    }
+
+  }
+}
